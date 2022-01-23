@@ -2,7 +2,7 @@ const mysql = require('mysql2');
 const inquirer = require('inquirer');
 const cTable = require('console.table');
 const fs = require('fs');
-const figlet = require('figlet');
+var figlet = require('figlet');
 
 // Connect to database
 const db = mysql.createConnection(
@@ -20,6 +20,7 @@ const db = mysql.createConnection(
 figlet("Employee \n Tracker!", function (err, data) {
     if (err) {
         console.log("Something went wrong...");
+        console.dir(err);
         return;
     }
 });
