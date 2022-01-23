@@ -51,19 +51,19 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 After cloning the repo, Open you terminal and enter the following:
 
-npm init --y    ##then press enter
+npm init --y   
 
-npm install --save mysql2    ##then press enter
+npm install --save mysql2    
 
-npm i   ##then press enter
+npm i  
 
-mysql -u root -p    ##then enter your password 
+mysql -u root -p    ##then enter your password when prompted
 
-source db/schema.sql   ##then press enter
+source db/schema.sql   
 
-source db/seed.sql   ###then press enter - you should see the seeded data
+source db/seed.sql   ###after you press enter - you should see the seeded data
 
-quit   ##then press enter
+quit  
 
 npm start    ##then press enter and follow the prompts
 
