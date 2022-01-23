@@ -1,4 +1,6 @@
 # EmployeeTracker
+
+Link to video demo: https://watch.screencastify.com/v/u7qX6lzFONZx5wdGdvDD
 ## User Story
 
 AS A business owner
@@ -24,3 +26,15 @@ WHEN I choose to add an employee
 THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
 WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
+
+## Installation
+After cloning the repo, Open you terminal and enter the following:
+npm init --y    ##then press enter
+npm install --save mysql2    ##then press enter
+npm i   ##then press enter
+mysql -u root -p    ##then enter your password 
+source db/schema.sql   ##then press enter
+source db/seed.sql   ###then press enter - you should see the seeded data
+quit   ##then press enter
+npm start    ##then press enter and follow the prompts
+
