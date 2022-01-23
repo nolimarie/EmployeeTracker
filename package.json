@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "console.table": "^0.10.0",
+    "express": "^4.17.2",
+    "figlet": "1.5.2",
     "inquirer": "^8.2.0",
     "mysql2": "^2.3.3"
   },
@@ -20,5 +22,7 @@
   },
   "bugs": {
     "url": "https://github.com/nolimarie/EmployeeTracker/issues"
-  }
+  },
+  "homepage": "https://github.com/nolimarie/EmployeeTracker#readme",
+  "keywords": []
 }
