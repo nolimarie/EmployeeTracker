@@ -2,7 +2,6 @@ const mysql = require('mysql2');
 const inquirer = require('inquirer');
 const cTable = require('console.table');
 const fs = require('fs');
-var figlet = require('figlet');
 
 // Connect to database
 const db = mysql.createConnection(
@@ -16,14 +15,6 @@ const db = mysql.createConnection(
     },
     console.log("Connected to the employeetracker database.")
 );
-
-figlet("Employee \n Tracker!", function (err, data) {
-    if (err) {
-        console.log("Something went wrong...");
-        console.dir(err);
-        return;
-    }
-});
 
 const promptUser = () => {
     return inquirer.prompt([
@@ -74,7 +65,12 @@ const promptUser = () => {
                     break;
 
                 case "Quit":
-                    db.exit();
+                    console.log(`
+                    ========================
+                            GOODBYE         
+                    ========================
+                    `)
+                    exit();
                     break;
                 
                 default:
